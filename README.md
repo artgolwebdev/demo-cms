@@ -170,7 +170,6 @@ Run installation commands
 
 
 ### Auth Flow
-
 ```flow
 st=>start: store/auth.module.js
 op=>operation: services/auth.service.js 
