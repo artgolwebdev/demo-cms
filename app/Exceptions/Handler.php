@@ -45,7 +45,14 @@ class Handler extends ExceptionHandler
     {
 
         $this->renderable(function (Throwable $e) {
-            //
+            if($e instanceof NotFoundHttpException) {
+
+                return response()->json([
+                    'status' => 'error' , 
+                    'message' => 'Resource not found'
+                ],404);
+            }
+    
         });
 
         $this->reportable(function (Throwable $e) {

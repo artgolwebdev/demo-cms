@@ -103,6 +103,7 @@ export default {
          getCustomer(){
         
             CustomerService.getCustomers("customer/"+this.$route.params.id).then(response=>{
+
                 // define current customer
                 Object.keys( response.customer).forEach((key)=>{
                     if(this.customer[key]){
@@ -110,7 +111,13 @@ export default {
                     }
                 })
             }).catch(error=>{
-                console.log(error)
+                console.log(error);
+                 // handle 404 
+                 if(error.status == "error"){
+                    $toast.error( error.message,{
+                        position : 'top-right'
+                    });
+                }
                 this.customers = []
             })
 
