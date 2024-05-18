@@ -169,7 +169,14 @@ Run installation commands
 	}
 
 
-## Auth Flow Chart
+####Auth Flow 
+
+- **/store/auth.module**
+handles global state if user is logged in
+- **/services/auth.service.js**
+points to correct server request and manipulates JWT token in local storage
+- **/services/request.js **
+manages server request with fetch api 
 
 ```mermaid
 graph TD;
