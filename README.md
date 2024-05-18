@@ -163,5 +163,5 @@ Run installation commands
         "prev_page_url": null,
         "to": 5,
         "total": 46
-    }
-}
+    	}
+	}
