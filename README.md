@@ -169,15 +169,11 @@ Run installation commands
 	}
 
 
-### Auth Flow
-```flow
-st=>start: store/auth.module.js
-op=>operation: services/auth.service.js 
-op2=>operation: services/request.js
-cond=>condition: SERVER success or error?
-e=>end: To home
+## Auth Flow Chart
 
-st->op->op2->cond
-cond(yes)->e
-cond(no)->op2
-```
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    
