@@ -46,6 +46,13 @@ class CustomerController extends Controller
      */
     public function show(Customer $customer)
     {
+        if(!$customer){
+            return response()->json([
+                "status" => "error" , 
+                "message" => "Customer not found"
+            ]);
+        }
+
         return response()->json([
             "status" => "success" , 
             "customer" => $customer
