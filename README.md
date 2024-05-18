@@ -169,7 +169,7 @@ Run installation commands
 	}
 
 
-####Auth Flow 
+#### Auth Flow 
 
 - **/store/auth.module**
 handles global state if user is logged in
