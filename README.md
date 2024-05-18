@@ -3,7 +3,7 @@
 - Laravel 9 REST API 
 - VUE + VUEX Redux Design Pattern 
 
-###Installation proccess
+##Installation proccess
 
 Clone Repository
 
@@ -89,7 +89,7 @@ Run installation commands
 
 **Delete Customer**
 
-		curl -X DELETE http://localhost:8000/api/customer/<customer-id>
+	  curl -X DELETE http://localhost:8000/api/customer/<customer-id>
      -H "Content-Type: application/json" 
      -H "Authorization: Bearer <token>" 
 
