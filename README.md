@@ -30,7 +30,7 @@ Run installation commands
 	php artisan serve 
 
 ## REST API Examples (Protected with JWT Bearer Token)
-** Create Customer **
+**Create Customer**
 
 	 curl -X POST http://localhost:8000/api/customer 
      -H "Content-Type: application/json" 
@@ -43,7 +43,7 @@ Run installation commands
          }'
 		 
 
-** Example Response **
+**Example Response**
 
 	{
     	"status": "success",
@@ -59,7 +59,7 @@ Run installation commands
     	"message": "Customer created successfully"
 	}
 
-** Update Customer **
+**Update Customer**
 
 	curl -X PUT http://localhost:8000/api/customer/<customer-id>
      -H "Content-Type: application/json" 
@@ -71,7 +71,7 @@ Run installation commands
 		   "address" : "Street , City , Country"
          }'
 
-** Example Response **
+**Example Response**
 
 		{
     "status": "success",
@@ -87,13 +87,13 @@ Run installation commands
    		 "message": "Customer updated successfully"
 	}
 
-** Delete Customer **
+**Delete Customer**
 
 		curl -X DELETE http://localhost:8000/api/customer/<customer-id>
      -H "Content-Type: application/json" 
      -H "Authorization: Bearer <token>" 
 
-** Example Response **
+**Example Response**
 		
 	{
     	"status": "success",
@@ -101,13 +101,13 @@ Run installation commands
 	}
 
 
-** GET Customer **
+**GET Customer**
 
 	curl -X GET http://localhost:8000/api/customer/<customer-id> 
      -H "Content-Type: application/json" 
      -H "Authorization: Bearer <token>" 
 
-** Example Response **
+**Example Response**
 
 	{
     "status": "success",
@@ -122,12 +122,13 @@ Run installation commands
     	}
 	}
 
-** GET All Customers **
+**GET All Customers**
 
 	curl -X GET http://localhost:8000/api/customer?page=1 
      -H "Content-Type: application/json" 
      -H "Authorization: Bearer <token>" 
-** Example Response **
+
+**Example Response**
 
 	{
     "status": "success",
