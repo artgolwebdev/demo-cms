@@ -41,7 +41,7 @@ class CustomerController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Customer  $customer
+     * @param  $id customer id
      * @return \Illuminate\Http\Response
      */
     public function show($id)

@@ -42,7 +42,6 @@
         ...mapGetters(["isLoggedIn"])
       },
       created() {
-        console.log(this.isLoggedIn)
         if(!this.isLoggedIn){
             this.$router.push('/')
         }
