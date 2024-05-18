@@ -4,7 +4,7 @@
 - VUE + VUEX Redux Design Pattern 
 
 
-### Installation proccess
+###Installation proccess
 
 
 Clone Repository
@@ -182,4 +182,3 @@ st->op->op2->cond
 cond(yes)->e
 cond(no)->op2
 ```
-
