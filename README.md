@@ -4,7 +4,7 @@
 - VUE + VUEX Redux Design Pattern 
 
 
-###Installation proccess
+### Installation proccess
 
 
 Clone Repository
