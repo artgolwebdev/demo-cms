@@ -173,7 +173,7 @@ Run installation commands
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
+    /store/auth.module.js-->/services/auth/service.js;
+    /services/auth/service.js-->/services/request.js;
+    /services/request.js-->API;
     
