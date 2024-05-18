@@ -21,12 +21,11 @@ rename .env.example to .env
 
 Run installation commands
 
-
-      composer update 
-      php artisan key:generate
-      php artisan jwt:secret
-      php artisan migrate --seed 
-	  npm install
-	  npm run build 
-	  php artisan serve 
+    composer update 
+    php artisan key:generate
+    php artisan jwt:secret
+    php artisan migrate --seed 
+	npm install
+	npm run build 
+	php artisan serve 
 
