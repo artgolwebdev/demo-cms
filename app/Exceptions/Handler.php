@@ -52,10 +52,6 @@ class Handler extends ExceptionHandler
                 ],404);
             }
     
-            return response()->json([
-                'status' => 'error' , 
-                'message' => $e->getMessage()
-            ]);
         });
 
         $this->reportable(function (Throwable $e) {
