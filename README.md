@@ -167,3 +167,19 @@ Run installation commands
         "total": 46
     	}
 	}
+
+
+###Auth Flow
+
+```flow
+st=>start: store/auth.module.js
+op=>operation: services/auth.service.js 
+op2=>operation: services/request.js
+cond=>condition: SERVER success or error?
+e=>end: To home
+
+st->op->op2->cond
+cond(yes)->e
+cond(no)->op2
+```
+
